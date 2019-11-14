@@ -1,13 +1,3 @@
-/**
- * Created by Petr Micko
- */
-
-'use strict';
-
-// for non-angular app - preventing protractor to wait for angular to be present when loading the test page
-browser.ignoreSynchronization = true;
-
-//Variables
 var workflow_name = 'Automation Homework';
 var baseURL = 'https://qa-engineer.herokuapp.com', i, j;
 var quotesRequired = [  ['Awesome Quotes', 'Excellent time to become a missing person.'],
