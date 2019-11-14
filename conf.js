@@ -3,7 +3,7 @@ const consoleReporter = require('jasmine-spec-reporter').SpecReporter;
 exports.config = {
 
     directConnect: true,
-    specs: ['./test_quotes.js'],
+    specs: ['./specs/test_quotes.js'],
     jasmineNodeOpts: {print: () => {}}, // suppress default "dot" reporter
 
     onPrepare: function () {
