@@ -1,0 +1,20 @@
+{
+  "name": "test-automation-protractor",
+  "version": "1.1.0",
+  "description": "E2E test example using protractor framework",
+  "author": "petrmicko@gmail.com",
+  "main": "conf.js",
+  "scripts": {
+    "prepare": "node_modules/.bin/webdriver-manager update",
+    "test": "protractor conf.js"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmicko/Automation.git"
+  },
+  "dependencies": {
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor": "^5.4.2"
+  }
+}
