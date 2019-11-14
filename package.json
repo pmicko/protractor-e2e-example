@@ -11,7 +11,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pmicko/Automation.git"
+    "url": "git+https://github.com/pmicko/test-automation-protractor.git"
   },
   "dependencies": {
     "jasmine-spec-reporter": "^4.2.1",
