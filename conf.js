@@ -1,10 +1,9 @@
-const consoleReporter = require('jasmine-spec-reporter').SpecReporter;
-
 exports.config = {
 
     directConnect: true,
     specs: ['./specs/test_quotes.js'],
     jasmineNodeOpts: {print: () => {}}, // suppress default "dot" reporter
+    baseUrl: 'https://qa-homework.herokuapp.com',
 
     onPrepare: function () {
         browser.driver.manage().window().maximize();
@@ -13,11 +12,12 @@ exports.config = {
         browser.waitForAngularEnabled(false);
 
         // setup console reporter
+        const consoleReporter = require('jasmine-spec-reporter').SpecReporter;
         jasmine.getEnv().addReporter(
             new consoleReporter({
                 spec: {
                     displayDuration: true,
-                    displayStacktrace: true,
+                    displayStacktrace: false,
                 },
                 summary: {
                     displayDuration: true,
