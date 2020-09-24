@@ -6,7 +6,8 @@
   "main": "conf.js",
   "scripts": {
     "prepare": "node_modules/.bin/webdriver-manager update",
-    "test": "protractor conf.js"
+    "test": "protractor conf.js",
+    "test-ci": "protractor conf-ci.js"
   },
   "license": "MIT",
   "repository": {
