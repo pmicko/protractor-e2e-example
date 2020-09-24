@@ -31,4 +31,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run tests
-        run: protractor conf-ci.js
+        run: npm run test-ci
