@@ -5,7 +5,7 @@
   "author": "petrmicko@gmail.com",
   "main": "conf.js",
   "scripts": {
-    "prepare": "node_modules/.bin/webdriver-manager update",
+    "prepare": "node_modules/.bin/webdriver-manager update && node_modules/.bin/webdriver-manager start",
     "test": "protractor conf.js",
     "test-ci": "protractor conf-ci.js"
   },
