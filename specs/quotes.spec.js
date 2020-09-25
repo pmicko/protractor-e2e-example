@@ -1,18 +1,18 @@
 const assets = require('../assets/testData');
 
-describe('Automation Homework', () => {
+describe('Automation Example', () => {
 
-    it('Open browser with test page', () => {
+    it('Main page - Open browser with test page', () => {
         browser.get('/');
         expect(browser.getTitle()).toEqual('QA Engineer');
     });
 
-    it('Main Page: submit', () => {
+    it('Main Page - Submit', () => {
         $('.enterButton').click();
         expect(browser.getCurrentUrl()).toEqual(browser.baseUrl + '/code');
     });
 
-    it('Code Page: get secret code and submit like a robot', () => {
+    it('Code Page - Get secret code and submit like a robot', () => {
         $('input[name=secret]').getAttribute('value').then(secretCode => {
             $('input[name=code]').sendKeys(secretCode);
         });
@@ -27,13 +27,13 @@ describe('Automation Homework', () => {
         expect(browser.getCurrentUrl()).toEqual(browser.baseUrl + '/lists');
     });
 
-    it('Lists page: All categories are displayed', () => {
+    it('Lists page - All categories are displayed', () => {
         $$('ul h2').each(headerElement => {
             expect([ 'Famous quotes', 'Awesome quotes' ]).toContain(headerElement.getText())
         });
     });
 
-    it('Lists page: All quotes are displayed within their categories, no extra quotes, no missing one', () => {
+    it('Lists page - All quotes are displayed within their categories, no extra quotes, no missing one', () => {
         const awesomeQuotesRequired = assets.quotes.awesome.sort();
         const famousQuotesRequired = assets.quotes.famous.sort();
 
@@ -48,7 +48,7 @@ describe('Automation Homework', () => {
         });
     });
 
-    it('Lists page: "Total score:" is the sum of all quote scores', () => {
+    it('Lists page - Total score is the sum of all quote scores', () => {
         $$('span[class*=score]').getText().then(scores => {
             let sumOfScores = 0;
             scores.forEach(score => sumOfScores += Number(score));
