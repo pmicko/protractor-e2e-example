@@ -32,4 +32,4 @@ jobs:
         run: npm install
 
       - name: Run tests
-        run: npm run test-ci -- --configuration=ci
+        run: npm run test-ci
