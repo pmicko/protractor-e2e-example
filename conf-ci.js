@@ -1,11 +1,15 @@
 exports.config = {
 
+    directConnect: true,
+   //  seleniumAddress: 'http://localhost:4444/wd/hub',
     specs: ['./specs/test_quotes.js'],
     jasmineNodeOpts: {print: () => {}}, // suppress default "dot" reporter
     baseUrl: 'https://qa-homework.herokuapp.com',
     capabilities: {
         'browserName': 'chrome',
-        'args': ['--headless', '--disable-gpu', '--no-sandbox', '--disable-extensions', '--disable-dev-shm-usage', "--window-size=1920,1080"]
+        'goog:chromeOptions': {
+            args: ['headless', 'disable-gpu'],
+        },
     },
 
     onPrepare: function () {
