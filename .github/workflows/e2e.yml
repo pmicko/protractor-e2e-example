@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: Install a Chrome browser
         uses: nanasess/setup-chromedriver@master
-        
+
       # Checks-out repository under $GITHUB_WORKSPACE
       - name: Git checkout
         uses: actions/checkout@v2
@@ -31,10 +31,10 @@ jobs:
 
       - name: Run tests
         run: npm run test-ci
-        
+
       - name: Save test results
         if: always()
         uses: actions/upload-artifact@v1
         with:
-          name: test-result
-          path: ./
+          name: test-results
+          path: reports

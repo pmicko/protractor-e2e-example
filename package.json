@@ -15,7 +15,11 @@
     "url": "git+https://github.com/pmicko/test-automation-protractor.git"
   },
   "dependencies": {
+    "fs": "0.0.1-security",
+    "fs-extra": "^9.0.1",
+    "jasmine-reporters": "^2.3.2",
     "jasmine-spec-reporter": "^4.2.1",
-    "protractor": "^5.4.2"
+    "protractor": "^5.4.4",
+    "protractor-html-reporter": "^1.3.2"
   }
 }
