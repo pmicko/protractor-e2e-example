@@ -1,4 +1,4 @@
-# Test Automation with Protractor  ![CI](https://img.shields.io/github/workflow/status/pmicko/test-automation-protractor/E2E?label=e2e&logo=github) ![version](https://img.shields.io/github/package-json/dependency-version/pmicko/test-automation-protractor/protractor)
+# Test Automation with Protractor  ![CI](https://img.shields.io/github/workflow/status/pmicko/test-automation-protractor/E2E?label=e2e&logo=github) ![version](https://img.shields.io/github/package-json/dependency-version/pmicko/test-automation-protractor/protractor) ![CodeFactor](https://img.shields.io/codefactor/grade/github/pmicko/test-automation-protractor/master?color=%2B)
 This represents example of basic E2E test written in JS using [Protractor](https://github.com/angular/protractor) and [Jasmine](https://jasmine.github.io/) frameworks.
 
 ## Setup
