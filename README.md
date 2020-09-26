@@ -1,8 +1,6 @@
-# E2E  test example
-This represents example of basic E2E test in Javascript using [Protractor](https://github.com/angular/protractor) and [Jasmine](https://jasmine.github.io/) frameworks.
+# Test Automation with Protractor  ![CI](https://img.shields.io/github/workflow/status/pmicko/test-automation-protractor/E2E?label=e2e&logo=github)
+This represents example of basic E2E test written in JS using [Protractor](https://github.com/angular/protractor) and [Jasmine](https://jasmine.github.io/) frameworks.
 
-To keep test script as simple as possible, page object pattern is not used in example.
-​
 ## Setup
 
 ### preconditions
@@ -23,3 +21,9 @@ In terminal, run following command:
 ```​
 npm run test
 ```
+## Features
+- Test report generation
+- Running e2e on CI using GH Workflow
+
+## Notes
+- To keep spec example as simple as possible, page object pattern is not used
