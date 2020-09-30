@@ -1,6 +1,6 @@
-const assets = require('../assets/testData');
+const assets = require('../../assets/testData');
 
-describe('Automation Example', () => {
+describe('Automation Example (without page objects)', () => {
 
     it('Main page - Open browser with test page', () => {
         browser.get('/');

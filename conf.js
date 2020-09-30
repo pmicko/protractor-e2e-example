@@ -4,7 +4,7 @@ const fse = require('fs-extra');
 exports.config = {
 
     directConnect: true,
-    specs: ['./specs/quotes.spec.js'],
+    specs: ['./specs/*/*.spec.js'],
     jasmineNodeOpts: {print: () => {}}, // suppress default "dot" reporter
     baseUrl: 'https://qa-homework.herokuapp.com',
 
