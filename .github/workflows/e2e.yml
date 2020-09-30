@@ -7,7 +7,7 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-  schedule:
+# schedule:
 # Scheduled run: once for every work day
 #    - cron: '0 0 * * 1-5'
 
