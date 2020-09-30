@@ -111,7 +111,7 @@ exports.config = {
                     testBrowser: browserName,
                     browserVersion: browserVersion,
                     modifiedSuiteName: false,
-                    screenshotsOnlyOnFailure: false,
+                    screenshotsOnlyOnFailure: true,
                 });
             });
         }
