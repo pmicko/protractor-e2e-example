@@ -18,9 +18,9 @@ exports.config = {
          * Create custom date string for reporters to have always unique file/dir names
          */
         const currentDate = new Date();
-		const convert = input => (input < 10) ? `0${input}` : input;
+	const convert = input => (input < 10) ? `0${input}` : input;
 
-		let second = convert(currentDate.getSeconds());
+	let second = convert(currentDate.getSeconds());
         let minute = convert(currentDate.getMinutes());
         let hour = convert(currentDate.getHours());
         let day = convert(currentDate.getDate());
@@ -104,7 +104,7 @@ exports.config = {
             capsPromise.then(caps => {
                 browserName = caps.get('browserName');
                 browserVersion = caps.get('version');
-				new HTMLReport().from(`${browser.params.actualReportDir}xmlReport.xml`, {
+		new HTMLReport().from(`${browser.params.actualReportDir}xmlReport.xml`, {
                     reportTitle: 'Test Report',
                     outputPath: browser.params.actualReportDir,
                     screenshotPath: './screenshots',
