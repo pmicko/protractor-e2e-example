@@ -20,8 +20,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Install a Chrome browser
+      - name: Install a chrome driver
         uses: nanasess/setup-chromedriver@master
+        with:
+          chromedriver-version: '94.0.4606.81'
 
       # Checks-out repository under $GITHUB_WORKSPACE
       - name: Git checkout
