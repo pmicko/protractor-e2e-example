@@ -5,9 +5,9 @@
   "author": "petrmicko@gmail.com",
   "main": "conf.js",
   "scripts": {
-    "pretest": "node_modules/.bin/webdriver-manager update --versions.chrome 94.0.4606.81 --standalone false --gecko false",
+    "pretest": "node_modules/.bin/webdriver-manager update --standalone false --gecko false",
     "test": "protractor conf.js",
-    "pretest-ci": "node_modules/.bin/webdriver-manager update --versions.chrome 94.0.4606.81 --standalone false --gecko false",
+    "pretest-ci": "node_modules/.bin/webdriver-manager update --standalone false --gecko false",
     "test-ci": "protractor conf-ci.js"
   },
   "license": "MIT",
