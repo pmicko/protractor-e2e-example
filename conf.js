@@ -6,7 +6,7 @@ exports.config = {
     directConnect: true,
     specs: ['./specs/*/*.spec.js'],
     jasmineNodeOpts: {print: () => {}}, // suppress default "dot" reporter
-    baseUrl: 'https://qa-homework.herokuapp.com',
+    baseUrl: 'https://salsita-qa-homework.netlify.app',
 
     onPrepare: function () {
         browser.driver.manage().window().maximize();
